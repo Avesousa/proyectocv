@@ -3,23 +3,19 @@
 	padding: 0px;
 }
 
+/* Navegación */
 
+label {
+	display: none;
+}
 
-nav{
+nav {
 	background:rgba(244, 98, 1, 0.9);
 	position:fixed;
 	width: 75%;
 	height: 60px;
-	top: 0px;
 	margin-left: 25%;
-}
-
-h1{
-	float: left;
-	margin-left: 20px;
-	margin-top: 20px;
-	font-family: 'Orbitron', sans-serif;;
-	font-size: 22px;
+	top: 0px;
 }
 
 nav ul{
@@ -27,34 +23,39 @@ nav ul{
 }
 
 nav li {
-	padding-top: 20px;
+	font-family: 'Orbitron', sans-serif;;
+	font-size: 100%;
+	padding-top: 25px;
 	padding-right: 5px;
 	padding-left: 5px;
 	float: left;
 	margin-left: 10px;
-	list-style: none;
+	list-style: none;	 
 }
 
 nav a{
 	text-decoration: none;
 	font-family: 'Orbitron', sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	color: rgb(245, 245, 245, 1);
 }
 
-nav li:hover {
-	background: #943e00;
-	height: 40px;
+.inforeponsive{
+	display: none;
 }
 
-.menu{
-	float: left;
-	height: 60px;
-	margin-top: 0px;
+.name {
+	padding-top: 25px;
 }
+
+.name:hover {
+	background: #943e00;
+	height: 35px;
+}
+
+/* Final del header */
 
 /* Comienzo de informacion derecha */
-
 
 .soy-der{
 	position: fixed;
@@ -87,13 +88,6 @@ nav li:hover {
 .bg-tlf:hover{
 	background: #ADACAB;
 }
-.bg-tlf img{
-	width: 15px;
-	height: 15px;
-	padding: 2px;
-	border: 2px solid white;
-	border-radius: 30px;
-}
 
 .bg-web{
 	color: #FAFAF9;
@@ -105,14 +99,6 @@ nav li:hover {
 
 .bg-web:hover{
 	background: #ADACAB;
-}
-
-.bg-web img{
-	width: 15px;
-	height: 15px;
-	padding: 2px;
-	border: 2px solid white;
-	border-radius: 30px;
 }
 
 .bg-correo{
@@ -127,34 +113,23 @@ nav li:hover {
 	background: #ADACAB;
 }
 
-.bg-correo img{
-	width: 15px;
-	height: 15px;
-	padding: 2px;
-	border: 2px solid white;
-	border-radius: 30px;
-}
-
 /* Final de info derecho */
-
-.exp{
-	background: #faf9f9;
-	padding-bottom: 3%; 
-}
-.exp:hover{
-	background: rgba(254, 111, 16, 0.7)
-}
 
 .cen{
 	background: #faf9f9;
 	width: 75%;
 	margin-top: 60px;
-	margin-left:25%;
-	z-index: 10px;
+	float: right;
 }
 
-.quien{
-	padding-bottom: 2%;
+.cen li{
+	width: 100%;
+	background: #faf9f9;
+	padding-bottom: 3%; 
+	list-style: none;
+}
+.cen li:hover{
+	background: rgba(254, 111, 16, 0.7)
 }
 
 .cen p{
@@ -170,13 +145,19 @@ nav li:hover {
 	background: #e5e6e7;
 	font-family: sans-serif;
 	font-size: 20px;
-	width: 100%;
+	width: 99%;
 	padding-top: 1%;
 	padding-left: 1.5%;
 	padding-bottom: 1%;
 }
 
-/** Comienzo de estilos **/
+.quien h1 
+{
+	color: rgba(244, 98, 1, 0.9);;
+	background: none;
+	padding-left: 5%; 
+}
+
 
 .cen h2{
 	color:#252525;
@@ -194,23 +175,209 @@ nav li:hover {
 	padding-left: 5%;
 }
 
-.edu-cen p{
-	padding-left: 5%;
-	padding-right: 5%;
+.quien{
+	padding-bottom: 2%;
+	width: 100%;
 }
+
+.quien ul{
+	margin-left: 5%;
+}
+
+.quien li{
+	width: 33%;
+	float: left;
+	list-style: none;
+	margin-top: 10px; 
+
+
+}
+
+.quien li:hover {
+	background: none;
+	color: orange;
+}
+
+.contenedor{
+	width: 100%;
+}
+
+.imgport{
+    width: 95%;
+    height: 100%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.imgport img{
+	opacity: 0.6;
+	width: 15%;
+	height: 15%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	margin-top: 2%;
+	float: left;
+}
+
+.imgport img:hover{
+	opacity: 1;
+}
+
 /* Final de estilos */
 
-.por-cen{
-
-}
-
-.emp-cen{
-
-}
 
 /* RESPONSIVE */
-@media	(max-width: 1143px){
-	.menu {
-		display: none;
+	@media	(max-width: 800px){
+
+		/* Realizando cambios a clases anteriores*/
+		
+		.respon 
+		{
+			display: none;
+		}
+		nav ul li 
+		{
+			display: none;
+			padding: 0px;
+		}
+
+		.soy-der 
+		{
+			position: static;
+			width: 100%;
+			text-align: center;
+		}
+
+		.cen
+		{
+			width: 100%;
+			margin-top: 0px;
+		}
+
+		.imgport
+		{
+			position: relative;
+		}
+
+		.inforeponsive
+		{
+			width: 100%;
+			color: #e7e7e7;
+			display: inline-block;
+			text-align: center;
+			float: none;
+			margin-top: 1px;
+			background:rgba(244, 98, 1, 0.9);
+			margin-left: 0;
+			height: auto;
+		}
+
+		.inforeponsive span 
+		{
+			font-size: 20px;
+		}
+
+		.bg-correo, .bg-tlf, .bg-web
+		{
+			display: none;
+		}
+
+		/* Comenzando a darle estilo al menú*/
+
+		nav{
+			background: #c1c1c1;
+			height: auto;
+			overflow: hidden;
+			transition: all 0.3s;
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			border-left: solid orange 1px;
+
+		}
+		input#menu{
+			display: none;
+		}
+
+		nav ul{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		.name{
+			width: 100%;
+			height: 20%;
+			margin: 0 auto;
+			padding: 0;
+			display: block;
+			float: none;
+			text-align: center;
+
+		}
+
+		.name a{
+			font-size: 20px;
+			height: auto;
+		}
+
+		.name:hover{
+			width: 100%;
+			background: #943e00;
+
+		}
+
+		.barramenurepon{
+			display: none;
+			position: fixed;
+		}
+
+		label i{
+			font-size: 20px!important;
+			transition: all 0.5s;
+			cursor: pointer;
+		}
+
+		label {
+			font-family: 'Orbitron', sans-serif;;
+			font-size: 25px;
+		}
+		.barramenurepon{
+			display: block;
+		}
+		nav{
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.3s;
+		}
+		input:checked~nav{
+			max-height: 400px;
+		}
+		input:checked+label i{
+			transform: rotate(90deg);
+		}
+		.barramenurepon {
+		    height: 30px;
+		    display: block;
+		    padding: 25px;
+		}
+
+		.bgmenu{
+			width: 100%;
+			background:rgba(244, 98, 1, 0.9);
+		}
+		nav ul{
+			height: 100%;
+		}
+
+		nav ul, .name /*nav ul li*/{
+			display: block;
+			text-align: center;
+		}
+
+
+
+
 	}
-}
